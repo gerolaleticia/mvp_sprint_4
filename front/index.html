@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="stylesheet" href="styles.css">
+
+    <title>Penguin Classifier</title>
+    <link rel="icon" href="img/home_logo.jpeg" type="image/png">
+</head>
+
+<body>
+     <!-- Cabeçalho de informações do sistema -->
+    <header>
+        <div class="title">
+            <h2>Penguin Classifier</h2>
+            <br>
+            <p>Este sistema foi desenvolvido para auxiliar na identificação de pinguins.</p>
+            <p>Para isso, basta preencher os campos abaixo com os dados do pinguin e clicar em "Identificar".</p>
+        </div>
+        <!-- <div class="banner">
+            <img src="img/home.jpeg">
+        </div> -->
+    </header>
+
+     <!-- Opções para adicionar um novo item -->
+     
+    <section class="newItem">
+        <input type="text" id="newInput" placeholder="Nome">
+        <input type="text" id="newLenght" placeholder="Lenght">
+        <input type="text" id="newDepth" placeholder="Depth">
+        <input type="text" id="newFlipper" placeholder="Flipper">
+        <input type="text" id="newMass" placeholder="Mass">
+        <span onclick="newItem()" class="addBtn">Identificar</span>
+    </section>
+
+    <!-- Tabela com items existentes -->
+    <section class="items">
+        <table id="myTable">
+            <tr>
+                <th>Nome</th>
+                <th>Lenght</th>
+                <th>Depth</th>
+                <th>Flipper</th>
+                <th>Mass</th>
+                <th>Specie</th>
+                <th><img src="https://cdn-icons-png.flaticon.com/512/126/126468.png" width="15" height="15"></th>
+                <!-- <th><img src="img/edit.png" width="15" height="15"></th> -->
+            </tr>
+        </table>
+    </section>
+
+    <script src="scripts.js"></script>
+</body>
+
+</html>
+
+

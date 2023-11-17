@@ -1,0 +1,66 @@
+[2023-11-16 15:01:11,669] INFO _log() L224   * Restarting with stat - call_trace=C:\Users\leticia.gerola\AppData\Local\Programs\Python\Python310\lib\site-packages\werkzeug\_internal.py L224 
+[2023-11-16 15:01:18,086] INFO _log() L224   * Running on all addresses (0.0.0.0)
+   WARNING: This is a development server. Do not use it in a production deployment.
+ * Running on http://127.0.0.1:5002
+ * Running on http://192.168.15.25:5002 (Press CTRL+C to quit) - call_trace=C:\Users\leticia.gerola\AppData\Local\Programs\Python\Python310\lib\site-packages\werkzeug\_internal.py L224 
+[2023-11-16 15:01:18,088] INFO _log() L224   * Restarting with stat - call_trace=C:\Users\leticia.gerola\AppData\Local\Programs\Python\Python310\lib\site-packages\werkzeug\_internal.py L224 
+[2023-11-16 15:01:20,874] INFO _log() L224  127.0.0.1 - - [16/Nov/2023 15:01:20] "[32mGET / HTTP/1.1[0m" 302 - - call_trace=C:\Users\leticia.gerola\AppData\Local\Programs\Python\Python310\lib\site-packages\werkzeug\_internal.py L224 
+[2023-11-16 15:01:20,891] INFO _log() L224  127.0.0.1 - - [16/Nov/2023 15:01:20] "GET /openapi/swagger HTTP/1.1" 200 - - call_trace=C:\Users\leticia.gerola\AppData\Local\Programs\Python\Python310\lib\site-packages\werkzeug\_internal.py L224 
+[2023-11-16 15:01:20,985] INFO _log() L224  127.0.0.1 - - [16/Nov/2023 15:01:20] "[36mGET /openapi/static/css/swagger-ui.css HTTP/1.1[0m" 304 - - call_trace=C:\Users\leticia.gerola\AppData\Local\Programs\Python\Python310\lib\site-packages\werkzeug\_internal.py L224 
+[2023-11-16 15:01:20,990] INFO _log() L224  127.0.0.1 - - [16/Nov/2023 15:01:20] "[36mGET /openapi/static/js/swagger-ui-bundle.js HTTP/1.1[0m" 304 - - call_trace=C:\Users\leticia.gerola\AppData\Local\Programs\Python\Python310\lib\site-packages\werkzeug\_internal.py L224 
+[2023-11-16 15:01:20,991] INFO _log() L224  127.0.0.1 - - [16/Nov/2023 15:01:20] "[36mGET /openapi/static/js/swagger-ui-standalone-preset.js HTTP/1.1[0m" 304 - - call_trace=C:\Users\leticia.gerola\AppData\Local\Programs\Python\Python310\lib\site-packages\werkzeug\_internal.py L224 
+[2023-11-16 15:01:21,173] INFO _log() L224  127.0.0.1 - - [16/Nov/2023 15:01:21] "GET /openapi/openapi.json HTTP/1.1" 200 - - call_trace=C:\Users\leticia.gerola\AppData\Local\Programs\Python\Python310\lib\site-packages\werkzeug\_internal.py L224 
+[2023-11-16 15:01:32,077] ERROR log_exception() L1449 Exception on /pinguin [POST] - call_trace=C:\Users\leticia.gerola\AppData\Local\Programs\Python\Python310\lib\site-packages\flask\app.py L1449
+Traceback (most recent call last):
+  File "C:\Users\leticia.gerola\AppData\Local\Programs\Python\Python310\lib\site-packages\flask\app.py", line 2073, in wsgi_app
+    response = self.full_dispatch_request()
+  File "C:\Users\leticia.gerola\AppData\Local\Programs\Python\Python310\lib\site-packages\flask\app.py", line 1519, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "C:\Users\leticia.gerola\AppData\Local\Programs\Python\Python310\lib\site-packages\flask_cors\extension.py", line 165, in wrapped_function
+    return cors_after_request(app.make_response(f(*args, **kwargs)))
+  File "C:\Users\leticia.gerola\AppData\Local\Programs\Python\Python310\lib\site-packages\flask\app.py", line 1517, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "C:\Users\leticia.gerola\AppData\Local\Programs\Python\Python310\lib\site-packages\flask\app.py", line 1503, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**req.view_args)
+  File "C:\Users\leticia.gerola\AppData\Local\Programs\Python\Python310\lib\site-packages\flask_openapi3\scaffold.py", line 191, in wrapper
+    resp = _do_wrapper(
+  File "C:\Users\leticia.gerola\AppData\Local\Programs\Python\Python310\lib\site-packages\flask_openapi3\do_wrapper.py", line 135, in _do_wrapper
+    response = func(**request_kwargs)
+  File "C:\Users\leticia.gerola\Desktop\Pessoal\pos_grad\mvp_sprint_4\api\app.py", line 87, in predict
+    outcome=Model.preditor(modelo, form)
+  File "C:\Users\leticia.gerola\Desktop\Pessoal\pos_grad\mvp_sprint_4\api\model\modelo.py", line 37, in preditor
+    rescaledEntradaX = scaler.fit_transform(X_input)
+  File "C:\Users\leticia.gerola\AppData\Local\Programs\Python\Python310\lib\site-packages\sklearn\base.py", line 867, in fit_transform
+    return self.fit(X, **fit_params).transform(X)
+  File "C:\Users\leticia.gerola\AppData\Local\Programs\Python\Python310\lib\site-packages\sklearn\preprocessing\_data.py", line 809, in fit
+    return self.partial_fit(X, y, sample_weight)
+  File "C:\Users\leticia.gerola\AppData\Local\Programs\Python\Python310\lib\site-packages\sklearn\preprocessing\_data.py", line 844, in partial_fit
+    X = self._validate_data(
+  File "C:\Users\leticia.gerola\AppData\Local\Programs\Python\Python310\lib\site-packages\sklearn\base.py", line 577, in _validate_data
+    X = check_array(X, input_name="X", **check_params)
+  File "C:\Users\leticia.gerola\AppData\Local\Programs\Python\Python310\lib\site-packages\sklearn\utils\validation.py", line 879, in check_array
+    raise ValueError(
+ValueError: Expected 2D array, got 1D array instead:
+array=[  47.2   13.7  214.5 4925.1].
+Reshape your data either using array.reshape(-1, 1) if your data has a single feature or array.reshape(1, -1) if it contains a single sample.
+[2023-11-16 15:01:32,086] INFO _log() L224  127.0.0.1 - - [16/Nov/2023 15:01:32] "[35m[1mPOST /pinguin HTTP/1.1[0m" 500 - - call_trace=C:\Users\leticia.gerola\AppData\Local\Programs\Python\Python310\lib\site-packages\werkzeug\_internal.py L224 
+[2023-11-16 15:02:22,085] INFO _log() L224   * Detected change in 'C:\\Users\\leticia.gerola\\Desktop\\Pessoal\\pos_grad\\mvp_sprint_4\\api\\model\\modelo.py', reloading - call_trace=C:\Users\leticia.gerola\AppData\Local\Programs\Python\Python310\lib\site-packages\werkzeug\_internal.py L224 
+[2023-11-16 15:02:22,271] INFO _log() L224   * Restarting with stat - call_trace=C:\Users\leticia.gerola\AppData\Local\Programs\Python\Python310\lib\site-packages\werkzeug\_internal.py L224 
+[2023-11-16 15:02:26,668] INFO _log() L224   * Running on all addresses (0.0.0.0)
+   WARNING: This is a development server. Do not use it in a production deployment.
+ * Running on http://127.0.0.1:5002
+ * Running on http://192.168.15.25:5002 (Press CTRL+C to quit) - call_trace=C:\Users\leticia.gerola\AppData\Local\Programs\Python\Python310\lib\site-packages\werkzeug\_internal.py L224 
+[2023-11-16 15:02:26,672] INFO _log() L224   * Restarting with stat - call_trace=C:\Users\leticia.gerola\AppData\Local\Programs\Python\Python310\lib\site-packages\werkzeug\_internal.py L224 
+[2023-11-16 15:02:28,511] INFO _log() L224  127.0.0.1 - - [16/Nov/2023 15:02:28] "[32mGET / HTTP/1.1[0m" 302 - - call_trace=C:\Users\leticia.gerola\AppData\Local\Programs\Python\Python310\lib\site-packages\werkzeug\_internal.py L224 
+[2023-11-16 15:02:28,518] INFO _log() L224  127.0.0.1 - - [16/Nov/2023 15:02:28] "GET /openapi/swagger HTTP/1.1" 200 - - call_trace=C:\Users\leticia.gerola\AppData\Local\Programs\Python\Python310\lib\site-packages\werkzeug\_internal.py L224 
+[2023-11-16 15:02:28,601] INFO _log() L224  127.0.0.1 - - [16/Nov/2023 15:02:28] "[36mGET /openapi/static/css/swagger-ui.css HTTP/1.1[0m" 304 - - call_trace=C:\Users\leticia.gerola\AppData\Local\Programs\Python\Python310\lib\site-packages\werkzeug\_internal.py L224 
+[2023-11-16 15:02:28,604] INFO _log() L224  127.0.0.1 - - [16/Nov/2023 15:02:28] "[36mGET /openapi/static/js/swagger-ui-standalone-preset.js HTTP/1.1[0m" 304 - - call_trace=C:\Users\leticia.gerola\AppData\Local\Programs\Python\Python310\lib\site-packages\werkzeug\_internal.py L224 
+[2023-11-16 15:02:28,605] INFO _log() L224  127.0.0.1 - - [16/Nov/2023 15:02:28] "[36mGET /openapi/static/js/swagger-ui-bundle.js HTTP/1.1[0m" 304 - - call_trace=C:\Users\leticia.gerola\AppData\Local\Programs\Python\Python310\lib\site-packages\werkzeug\_internal.py L224 
+[2023-11-16 15:02:28,794] INFO _log() L224  127.0.0.1 - - [16/Nov/2023 15:02:28] "GET /openapi/openapi.json HTTP/1.1" 200 - - call_trace=C:\Users\leticia.gerola\AppData\Local\Programs\Python\Python310\lib\site-packages\werkzeug\_internal.py L224 
+[2023-11-16 15:02:35,218] INFO _log() L224  127.0.0.1 - - [16/Nov/2023 15:02:35] "[35m[1mPOST /pinguin HTTP/1.1[0m" 500 - - call_trace=C:\Users\leticia.gerola\AppData\Local\Programs\Python\Python310\lib\site-packages\werkzeug\_internal.py L224 
+[2023-11-16 15:03:56,436] INFO _log() L224   * Detected change in 'C:\\Users\\leticia.gerola\\Desktop\\Pessoal\\pos_grad\\mvp_sprint_4\\api\\model\\modelo.py', reloading - call_trace=C:\Users\leticia.gerola\AppData\Local\Programs\Python\Python310\lib\site-packages\werkzeug\_internal.py L224 
+[2023-11-16 15:03:56,610] INFO _log() L224   * Restarting with stat - call_trace=C:\Users\leticia.gerola\AppData\Local\Programs\Python\Python310\lib\site-packages\werkzeug\_internal.py L224 
+[2023-11-16 15:07:04,897] INFO _log() L224   * Detected change in 'C:\\Users\\leticia.gerola\\Desktop\\Pessoal\\pos_grad\\mvp_sprint_4\\api\\model\\modelo.py', reloading - call_trace=C:\Users\leticia.gerola\AppData\Local\Programs\Python\Python310\lib\site-packages\werkzeug\_internal.py L224 
+[2023-11-16 15:07:05,056] INFO _log() L224   * Restarting with stat - call_trace=C:\Users\leticia.gerola\AppData\Local\Programs\Python\Python310\lib\site-packages\werkzeug\_internal.py L224 
+[2023-11-17 09:33:34,585] INFO _log() L224   * Detected change in 'C:\\Users\\leticia.gerola\\Desktop\\Pessoal\\pos_grad\\mvp_sprint_4\\api\\model\\modelo.py', reloading - call_trace=C:\Users\leticia.gerola\AppData\Local\Programs\Python\Python310\lib\site-packages\werkzeug\_internal.py L224 
+[2023-11-17 09:33:34,944] INFO _log() L224   * Restarting with stat - call_trace=C:\Users\leticia.gerola\AppData\Local\Programs\Python\Python310\lib\site-packages\werkzeug\_internal.py L224 
