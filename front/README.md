@@ -1,8 +1,8 @@
 # Meu Front
 
-Este pequeno projeto faz parte do material diático da Disciplina **Desenvolvimento Full Stack Básico** 
+Este projeto é o front-end da aplicação **Penguin Classifier** 
 
-O objetivo aqui é ilutsrar o conteúdo apresentado na terceira aula.
+O objetivo é possibilitar que o usuário consuma o modelo de ML embarcado no back-end.
 
 ---
 ## Como executar

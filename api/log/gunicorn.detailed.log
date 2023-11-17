@@ -25,3 +25,4 @@
 [2023-11-17 10:30:27,813] INFO _log() L224  127.0.0.1 - - [17/Nov/2023 10:30:27] "GET /pinguins HTTP/1.1" 200 - - call_trace=C:\Users\leticia.gerola\AppData\Local\Programs\Python\Python310\lib\site-packages\werkzeug\_internal.py L224 
 [2023-11-17 10:30:40,894] INFO _log() L224  127.0.0.1 - - [17/Nov/2023 10:30:40] "GET /pinguins?nome=teste%202 HTTP/1.1" 200 - - call_trace=C:\Users\leticia.gerola\AppData\Local\Programs\Python\Python310\lib\site-packages\werkzeug\_internal.py L224 
 [2023-11-17 10:30:40,910] INFO _log() L224  127.0.0.1 - - [17/Nov/2023 10:30:40] "POST /pinguin HTTP/1.1" 200 - - call_trace=C:\Users\leticia.gerola\AppData\Local\Programs\Python\Python310\lib\site-packages\werkzeug\_internal.py L224 
+[2023-11-17 10:30:43,480] INFO _log() L224  127.0.0.1 - - [17/Nov/2023 10:30:43] "GET /pinguins HTTP/1.1" 200 - - call_trace=C:\Users\leticia.gerola\AppData\Local\Programs\Python\Python310\lib\site-packages\werkzeug\_internal.py L224 
