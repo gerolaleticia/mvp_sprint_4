@@ -18,3 +18,5 @@ O notebook utilizado para concepção do modelo, disponível na pasta notebooks_
 
 [Google Colab - notebook](https://colab.research.google.com/drive/1ECkliaYYnelRqTJnlcxlDo7aAPEPPKae?usp=sharing)
 
+Vídeo explicativo: https://www.youtube.com/watch?v=BMjiCuLVCz8 
+
